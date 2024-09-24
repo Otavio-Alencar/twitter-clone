@@ -1,6 +1,6 @@
 import { Logo } from '@/components/ui/logo'
 
-import { SignUpForm } from '@/components/ui/signForms/signupform'
+import { SignUpForm } from '@/components/signForms/signupform'
 
 const Page = () => {
   return (

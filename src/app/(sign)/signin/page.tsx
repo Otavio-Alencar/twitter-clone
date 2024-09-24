@@ -1,5 +1,5 @@
 import { Logo } from '@/components/ui/logo'
-import { SignInForm } from '@/components/ui/signForms/signinform'
+import { SignInForm } from '@/components/signForms/signinform'
 
 const Page = () => {
   return (

@@ -1,4 +1,5 @@
 export type User = {
+  id: number
   slug: string
   name: string
   avatar: string

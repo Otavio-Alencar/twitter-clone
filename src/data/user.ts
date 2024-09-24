@@ -1,6 +1,7 @@
 import { User } from '@/types/usertype'
 
 export const user: User = {
+  id: 1,
   slug: 'otavio',
   name: 'Otávio Alencar',
   avatar:

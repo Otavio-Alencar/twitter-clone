@@ -1,4 +1,5 @@
-import { LeftSideLayout } from '@/components/ui/homelayout/left/leftlayout'
+import { LeftSideLayout } from '@/components/homelayout/left/leftlayout'
+import { RightSideLayout } from '@/components/homelayout/right/rightlayout'
 
 export default function RootLayout({
   children,
@@ -10,9 +11,7 @@ export default function RootLayout({
       <body className="mx-auto flex min-h-screen w-full max-w-[1240px] justify-center lg:justify-between lg:px-10">
         <LeftSideLayout />
         <section>{children}</section>
-        <aside className="hidden w-72 border-l border-gray-500 lg:flex">
-          ...
-        </aside>
+        <RightSideLayout />
       </body>
     </html>
   )

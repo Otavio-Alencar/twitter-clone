@@ -14,7 +14,7 @@ export const LinkNav = ({ href, icon, label, gray, active }: props) => {
   const isMe = pathName === href
   const router = useRouter()
   const handleClickroute = () => {
-    router.replace(href)
+    router.push(href)
   }
   return (
     <button
