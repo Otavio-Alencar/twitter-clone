@@ -1,0 +1,7 @@
+echo 'Check linting errors'
+npm run lint-fix
+npm run lint ||
+(echo 'Linting errors or test failed' && exit)
+
+
+echo 'Done'
