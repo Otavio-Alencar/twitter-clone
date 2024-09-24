@@ -4,11 +4,17 @@ import { Input } from '@/components/ui/input'
 import { useState } from 'react'
 import { Button } from '../button'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 export const SignUpForm = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [date, setDate] = useState('')
+  const router = useRouter()
+
+  const handleClickSignUp = () => {
+    router.replace('/signin')
+  }
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-5">
@@ -47,7 +53,9 @@ export const SignUpForm = () => {
         >
           Já tem uma conta?
         </Link>
-        <Button size={'lg'}>Cadastrar</Button>
+        <Button onClick={handleClickSignUp} size={'lg'}>
+          Cadastrar
+        </Button>
       </div>
     </div>
   )
