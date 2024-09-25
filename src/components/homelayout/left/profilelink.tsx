@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 export const ProfileLink = () => {
   const router = useRouter()
   const handleClickroute = () => {
-    router.push('/profile?id=' + encodeURIComponent(user.id))
+    router.push('/profile/' + user.slug)
   }
   return (
     <div
@@ -17,7 +17,7 @@ export const ProfileLink = () => {
         <AvatarImage src={user.avatar} />
       </Avatar>
       <div>
-        <h1 className="truncate">{user.name}</h1>
+        <h1 className="truncate text-[14px]">{user.name}</h1>
         <p className="truncate text-sm text-gray-500">@{user.slug}</p>
       </div>
     </div>

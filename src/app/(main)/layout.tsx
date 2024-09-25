@@ -10,7 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="mx-auto flex min-h-screen w-full max-w-[1240px] justify-center lg:justify-between lg:px-10">
         <LeftSideLayout />
-        <section>{children}</section>
+        <section className="w-full">{children}</section>
         <RightSideLayout />
       </body>
     </html>
