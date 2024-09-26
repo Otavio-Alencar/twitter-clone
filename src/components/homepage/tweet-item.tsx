@@ -9,9 +9,9 @@ export const TweetItem = () => {
       {Array.from({ length: 6 }, (item, index) => (
         <div
           key={index}
-          className="mt-2 w-full border-b border-b-popover px-10 py-5"
+          className="mt-2 w-full border-b border-b-popover px-5 py-5"
         >
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             <Avatar>
               <AvatarImage src={tweet.user.avatar} />
             </Avatar>

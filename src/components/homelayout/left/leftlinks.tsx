@@ -5,7 +5,7 @@ export const LeftLinks = () => {
   return (
     <div className="flex flex-col gap-6">
       <LinkNav href={'/home'} icon={<HouseIcon />} label="Página Inicial" />
-      <LinkNav href={'/perfil'} icon={<UserRound />} label="Perfil" />
+      <LinkNav href={'/profile'} icon={<UserRound />} label="Perfil" />
     </div>
   )
 }

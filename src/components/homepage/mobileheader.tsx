@@ -34,7 +34,7 @@ export const MobileHeader = () => {
               icon={<HouseIcon />}
               label="Página Inicial"
             />
-            <LinkNav href={'/perfil'} icon={<UserRound />} label="Perfil" />
+            <LinkNav href={'/profile'} icon={<UserRound />} label="Perfil" />
             <LinkNav href="/signin" label="Sair" icon={<LogOut />} />
           </div>
         </SheetContent>
