@@ -5,7 +5,7 @@ import { Textarea } from '../ui/textarea'
 
 export const EditInputs = () => {
   return (
-    <div className="flex flex-col gap-4 px-5">
+    <div className="flex flex-col gap-2 px-5">
       <label>
         <p className="text-lg text-gray-500">Nome</p>
         <Input placeholder="Seu nome" value={user.name} />
@@ -18,7 +18,7 @@ export const EditInputs = () => {
         <p className="text-lg text-gray-500">Link</p>
         <Input placeholder="Seu nome" value={user.link} />
       </label>
-      <Button className="h-14 rounded-full">Salvar alterações</Button>
+      <Button className="mt-4 h-14 rounded-full">Salvar alterações</Button>
     </div>
   )
 }
