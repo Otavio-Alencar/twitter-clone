@@ -1,5 +1,6 @@
 import { TweetItem } from '@/components/homepage/tweet-item'
 import { SearchHeader } from '@/components/search/searchHeader'
+import { tweet } from '@/data/tweet'
 import { redirect } from 'next/navigation'
 
 type Props = {
@@ -13,7 +14,7 @@ const Page = ({ searchParams }: Props) => {
   return (
     <div>
       <SearchHeader defaultValue={searchParams.q} />
-      <TweetItem />
+      <TweetItem tweet={tweet} quantity={4} />
     </div>
   )
 }

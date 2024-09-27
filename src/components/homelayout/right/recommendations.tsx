@@ -10,7 +10,7 @@ export const Recommendations = () => {
         <CardTitle>Quem seguir</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
-        <div className="flex gap-2">
+        <div className="flex gap-3">
           <ProfileLink />
           <Button size={'sm'}>Seguir</Button>
         </div>

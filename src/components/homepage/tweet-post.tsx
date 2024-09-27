@@ -15,9 +15,9 @@ export const TweetPost = () => {
           <AvatarImage src={user.avatar} />
         </Avatar>
       </div>
-      <div className="flex-1">
+      <div className="w-1/2 flex-1">
         <div
-          className="min-h-14 text-lg text-white outline-none empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)]"
+          className="min-h-14 w-full text-wrap text-sm text-white outline-none empty:before:text-sm empty:before:text-gray-500 empty:before:content-[attr(data-placeholder)] lg:text-lg empty:before:lg:text-lg"
           contentEditable
           role="textbox"
           data-placeholder="O que está acontecendo?"
@@ -26,7 +26,7 @@ export const TweetPost = () => {
           <div onClick={handleImageUpload} className="cursor-pointer">
             <Image />
           </div>
-          <div className="w-28">
+          <div className="pl-4">
             <Button className="rounded-3xl text-lg" onClick={handlePostClick}>
               Postar
             </Button>
