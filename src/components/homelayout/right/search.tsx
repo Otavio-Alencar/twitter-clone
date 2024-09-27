@@ -14,14 +14,18 @@ export const Search = ({ defaultValue, hideOnSearch }: props) => {
   const handleSearchEnter = () => {
     router.push('/search?q=' + encodeURIComponent(search))
   }
-  if (hideOnSearch && pathname === '/search') return null
-  return (
-    <Input
-      placeholder="Buscar"
-      search={true}
-      value={search}
-      onChange={(t) => setSearch(t)}
-      onEnter={handleSearchEnter}
-    />
-  )
+
+  if (hideOnSearch && pathname === '/search') {
+    return null
+  } else {
+    return (
+      <Input
+        placeholder="Buscar"
+        search={true}
+        value={search}
+        onChange={(t) => setSearch(t)}
+        onEnter={handleSearchEnter}
+      />
+    )
+  }
 }
